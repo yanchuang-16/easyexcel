@@ -6,6 +6,7 @@ import java.util.Map;
 import com.alibaba.excel.converters.bigdecimal.BigDecimalBooleanConverter;
 import com.alibaba.excel.converters.bigdecimal.BigDecimalNumberConverter;
 import com.alibaba.excel.converters.bigdecimal.BigDecimalStringConverter;
+import com.alibaba.excel.converters.biginteger.BigIntegerNumberConverter;
 import com.alibaba.excel.converters.booleanconverter.BooleanBooleanConverter;
 import com.alibaba.excel.converters.booleanconverter.BooleanNumberConverter;
 import com.alibaba.excel.converters.booleanconverter.BooleanStringConverter;
@@ -59,6 +60,7 @@ public class DefaultConverterLoader {
         }
         defaultWriteConverter = new HashMap<String, Converter>(32);
         putWriteConverter(new BigDecimalNumberConverter());
+        putWriteConverter(new BigIntegerNumberConverter());
         putWriteConverter(new BooleanBooleanConverter());
         putWriteConverter(new ByteNumberConverter());
         putWriteConverter(new DateStringConverter());
@@ -101,6 +103,10 @@ public class DefaultConverterLoader {
         allConverter = new HashMap<String, Converter>(64);
         putAllConverter(new BigDecimalBooleanConverter());
         putAllConverter(new BigDecimalNumberConverter());
+        putAllConverter(new BigDecimalStringConverter());
+
+        putAllConverter(new BigDecimalBooleanConverter());
+        putAllConverter(new BigIntegerNumberConverter());
         putAllConverter(new BigDecimalStringConverter());
 
         putAllConverter(new BooleanBooleanConverter());
