@@ -11,7 +11,7 @@ import java.math.BigInteger;
 
 /**
  * @description: BigInteger and number converter
- * @author: YanChuang
+ * @author: Chuang Yan
  * @time: 2019/12/9 20:27
  */
 public class BigIntegerNumberConverter implements Converter<BigInteger> {

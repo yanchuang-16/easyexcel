@@ -10,7 +10,7 @@ import java.math.BigInteger;
 
 /**
  * @description: BigInteger and boolean converter
- * @author: YanChuang
+ * @author: Chuang Yan
  * @time: 2019/12/9 21:16
  */
 public class BigIntegerBooleanConverter implements Converter<BigInteger> {
