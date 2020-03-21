@@ -12,7 +12,7 @@ import java.math.BigInteger;
 import java.text.ParseException;
 
 /**
- * @description:
+ * @description: BigInteger and string converter
  * @author: YanChuang
  * @time: 2019/12/9 21:16
  */
@@ -30,7 +30,7 @@ public class BigIntegerStringConverter implements Converter<BigInteger> {
     @Override
     public BigInteger convertToJavaData(CellData cellData, ExcelContentProperty contentProperty,
                                         GlobalConfiguration globalConfiguration) throws ParseException {
-        return BigInteger.valueOf(NumberUtils.parseBigDecimal(cellData.getStringValue(), contentProperty).longValue());
+        return NumberUtils.parseBigDecimal(cellData.getStringValue(), contentProperty).toBigInteger();
     }
 
     @Override

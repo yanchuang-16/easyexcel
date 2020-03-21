@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
- * @description:
+ * @description: BigInteger and number converter
  * @author: YanChuang
  * @time: 2019/12/9 20:27
  */

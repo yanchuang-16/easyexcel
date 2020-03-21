@@ -9,7 +9,7 @@ import com.alibaba.excel.metadata.property.ExcelContentProperty;
 import java.math.BigInteger;
 
 /**
- * @description:
+ * @description: BigInteger and boolean converter
  * @author: YanChuang
  * @time: 2019/12/9 21:16
  */
